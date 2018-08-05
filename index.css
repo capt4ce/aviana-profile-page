@@ -1,0 +1,95 @@
+.btn-outline-orange{
+  font-weight: bold;
+  background-color: initial;
+  border: solid 0.2rem #F1592B;
+  color: #F1592B;
+  border-radius: 13px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btn.btn-outline-orange:hover {
+  background-color: #F1592B;
+  color: white;
+}
+
+.btn-outline-blue{
+  font-weight: bold;
+  background-color: initial;
+  border: solid 0.2rem #1788B4;
+  color: #1788B4;
+  border-radius: 13px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btn.btn-outline-blue:hover {
+  background-color: #1788B4;
+  color: white;
+}
+
+.aviana-intro{
+  background-color: #ecf0f1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.aviana-features {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.aviana-feedback{
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  background: #ecf0f1;
+}
+
+.aviana-single-feedback {
+  margin-top: 2rem;
+}
+
+.aviana-img-circle{
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 1rem;
+}
+
+.aviana-footer, .aviana-footer a{
+  color: white;
+}
+
+.aviana-footer-first{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  background-color: #1788B4;
+}
+
+.aviana-footer-second{
+  padding-top: 1.5rem;
+  padding-bottom: 0.2rem;
+  background-color: #F1592B;
+}
+
+.aviana-footer-logo{
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.aviana-single-feature {
+  margin-top: 1rem;
+}
+
+.aviana-feature-icon{
+  font-size: 5rem;
+  padding: 1.5rem;
+}
+
+.aviana-feature-icon:before {
+  font-size: 72px;
+  background: -webkit-gradient(linear, right top, left bottom, from(#F1592B), to(#1788B4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial; /* reset Font Awesome's display:inline-block */
+}​
