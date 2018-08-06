@@ -1,11 +1,79 @@
-.btn-outline-orange{
+.aviana-display-text{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.aviana-package{
+  height: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  -webkit-clip-path: polygon(51% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
+  clip-path: polygon(51% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
+}
+
+.aviana-package .package-border{
+  filter: drop-shadow(0px 7px 5px rgba(0,0,0,0.5));
+}
+
+.package-wrapper{
+  background-color:white;
+  -webkit-clip-path: polygon(51% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+  clip-path: polygon(51% 100%, 100% 80%, 100% 0, 0 0, 0 80%);
+}
+
+.aviana-package .package-header{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+}
+
+.aviana-package .package-title, .package-price{
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+
+.aviana-package .package-action{
+  padding-bottom: 6rem;
+  margin-bottom: 3rem;
+}
+
+.aviana-package.package-light-blue .package-header{
+  background-color: #00BAFF;
+}
+
+.aviana-package.package-yellow .package-header{
+  background-color: #FFAE00;
+}
+
+.aviana-package.package-dark-blue .package-header{
+  background-color: #076285;
+}
+
+.aviana-package.package-light-blue .package-title, .aviana-package.package-light-blue .package-price{
+  color: #00BAFF;
+}
+.aviana-package.package-yellow .package-title, .aviana-package.package-yellow .package-price{
+  color: #FFAE00;
+}
+
+.aviana-package.package-dark-blue .package-title, .aviana-package.package-dark-blue .package-price{
+  color: #076285;
+}
+
+.aviana-btn{
   font-weight: bold;
   background-color: initial;
-  border: solid 0.2rem #F1592B;
-  color: #F1592B;
-  border-radius: 13px;
+  border-radius: 8px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  border: solid 0.15rem;
+}
+
+.btn-outline-orange{
+  border-color: #F1592B;
+  color: #F1592B;
 }
 
 .btn.btn-outline-orange:hover {
@@ -14,18 +82,46 @@
 }
 
 .btn-outline-blue{
-  font-weight: bold;
-  background-color: initial;
-  border: solid 0.2rem #1788B4;
+  border-color: #1788B4;
   color: #1788B4;
-  border-radius: 13px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .btn.btn-outline-blue:hover {
   background-color: #1788B4;
   color: white;
+}
+
+.btn-solid-light-blue{
+  border-color: #00BAFF;
+  background-color: #00BAFF;
+  color: white;
+}
+
+.btn-solid-light-blue:hover{
+  border-color: #1788B4;
+  background-color: #1788B4;
+}
+
+.btn-solid-yellow{
+  border-color: #FFAE00;
+  background-color: #FFAE00;
+  color: white;
+}
+
+.btn-solid-yellow:hover{
+  border-color: rgb(230, 159, 7);
+  background-color: rgb(230, 159, 7);
+}
+
+.btn-solid-dark-blue{
+  border-color: #076285;
+  background-color: #076285;
+  color: white;
+}
+
+.btn-solid-dark-blue:hover{
+  border-color: #06516e;
+  background-color: #06516e;
 }
 
 .aviana-intro{
