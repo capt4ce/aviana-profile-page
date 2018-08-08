@@ -3,9 +3,59 @@
   background-color: white;
 }
 
-.aviana-display{
+.aviana-content{
   margin-top: 100px;
 }
+
+.aviana-package-form{
+  padding-bottom: 30px;
+}
+
+.aviana-package-form.package-basic .package-submit-btn,
+.aviana-package-form.package-basic .card-header{
+  color: white;
+  background-color: #00BAFF
+}
+
+.aviana-package-form.package-basic .package-text{
+  color: #00BAFF
+}
+
+.aviana-package-form.package-basic .package-submit-btn:hover{
+  color: white;
+  background-color: rgb(2, 150, 204)
+}
+
+.aviana-package-form.package-standard .package-submit-btn,
+.aviana-package-form.package-standard .card-header{
+  color: white;
+  background-color: #FFAE00
+}
+
+.aviana-package-form.package-standard .package-text{
+  color: #FFAE00
+}
+
+.aviana-package-form.package-standard .package-submit-btn:hover{
+  color: white;
+  background-color: rgb(214, 147, 2)
+}
+
+.aviana-package-form.package-premium .package-submit-btn,
+.aviana-package-form.package-premium .card-header{
+  color: white;
+  background-color: #076285
+}
+
+.aviana-package-form.package-premium .package-text{
+  color: #076285
+}
+
+.aviana-package-form.package-premium .package-submit-btn:hover{
+  color: white;
+  background-color: #064b66
+}
+
 .aviana-display-text{
   margin-top: auto;
   margin-bottom: auto;
@@ -108,6 +158,7 @@
 .btn-solid-light-blue:hover{
   border-color: #1788B4;
   background-color: #1788B4;
+  color: white;
 }
 
 .btn-solid-yellow{
@@ -119,6 +170,7 @@
 .btn-solid-yellow:hover{
   border-color: rgb(230, 159, 7);
   background-color: rgb(230, 159, 7);
+  color: white;
 }
 
 .btn-solid-dark-blue{
@@ -130,6 +182,7 @@
 .btn-solid-dark-blue:hover{
   border-color: #06516e;
   background-color: #06516e;
+  color: white;
 }
 
 .aviana-intro{
