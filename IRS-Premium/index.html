@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/bootstrap-colorpicker.min.css" x>
   <link rel="stylesheet" href="/index.css">
 
   <title>IRS Cloud</title>
@@ -50,58 +53,93 @@
   </nav>
 
   <div class="aviana-content">
-      <div class="aviana-package-form package-premium">
-          <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Daftar Paket: <b>IRS Premium</b></div>
-                        <div class="card-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Nama Lengkap</label>
-                                    <input type="text" class="form-control" id="name" name="name"/>
-                                  </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlInput1">Alamat Email</label>
-                                <input type="email" class="form-control" id="email" name="email"/>
-                              </div>
-                              <div class="form-group">
-                                  <label for="exampleFormControlInput1">Alamat</label>
-                                  <input type="text" class="form-control" id="address" name="address"/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">No Telepon</label>
-                                    <input type="text" class="form-control" id="phone" name="phone"/>
-                                  </div>
-                              <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Komentar</label>
-                                <textarea class="form-control" id="comment" name="comment" rows="3"></textarea>
-                              </div>
-                              <button type="submit" class="btn aviana-btn package-submit-btn">Daftar</button>
-                            </form>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title package-text"><b>IRS Premium</b></h5>
-                          <p class="card-text">IRS Premium adalah paket IRS software yang mencakup:<br/>
-                            <ul>
-                              <li>Software IRS</li>
-                              <li>Modem pool 16 port</li>
-                              <li>IP VPN</li>
-                            </ul>
-                            <p class="package-text">Harga: <b><sup>Rp</sup>150.000</b></p>
-                          </p>
-                          <a href="#" class="btn aviana-btn package-submit-btn">Support</a>
-                        </div>
-                      </div>
-                </div>
+    <div class="aviana-package-form package-premium">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-header">Daftar Paket:
+                <b>IRS Cloud Premium</b>
               </div>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="name" name="name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="address">Alamat Lengkap</label>
+                    <input type="text" class="form-control" id="address" name="address" />
+                  </div>
+                  <div class="form-group">
+                    <label for="city">Kota</label>
+                    <input type="text" class="form-control" id="city" name="city" />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">No. Kontak Pribadi</label>
+                    <input type="text" class="form-control" id="phone" name="phone" />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" class="form-control" id="email" name="email" />
+                  </div>
+                  <hr/>
+                  <div class="form-group">
+                    <label for="businessName">Nama Bisnis</label>
+                    <input type="email" class="form-control" id="businessName" name="businessName" />
+                  </div>
+                  <div class="form-group">
+                    <label for="buseinessSlogan">Slogan Bisnis (Optional)</label>
+                    <input type="email" class="form-control" id="buseinessSlogan" name="buseinessSlogan" />
+                  </div>
+                  <div class="form-group">
+                    <label for="businessAddress">Alamat Bisnis</label>
+                    <input type="email" class="form-control" id="businessAddress" name="businessAddress" />
+                  </div>
+                  <div class="form-group">
+                    <label for="businessPhone">No. kontak Bisnis</label>
+                    <input type="email" class="form-control" id="businessPhone" name="businessPhone" />
+                  </div>
+                  <hr/>
+                  <div class="form-group">
+                    <label for="appLogo">Logo untuk Mobile App</label>
+                    <input type="file" class="form-control btn btn-regular" id="appLogo" name="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="appColorTheme">Warna theme App</label>
+                    <input type="text" class="form-control" id="appColorTheme" name="appColorTheme" />
+                  </div>
+                  <button type="submit" class="btn aviana-btn package-submit-btn">Daftar</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title package-text">
+                  <b>IRS Cloud Premium</b>
+                </h5>
+                <p class="card-text">IRS Premium adalah paket IRS Cloud software yang mencakup:
+                  <br/>
+                  <ul>
+                    <li>Dedicated Server</li>
+                    <li>Mobile App Android</li>
+                    <li>Max 3000 Trx PerHari</li>
+                    <li>3 Suplier</li>
+                  </ul>
+                  <p class="package-text">Harga:
+                    <b>
+                      <sup>Rp</sup>999.000/bulan</b>
+                  </p>
+                </p>
+                <a href="#" class="btn aviana-btn package-submit-btn">Get Support</a>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </div>
   </div>
 
   <div class="aviana-footer">
@@ -160,8 +198,18 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"></script>
-  <script src="/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="/bootstrap-colorpicker.min.js"></script>
+  <script>
+    $(function () {
+      // Basic instantiation:
+      $('#appColorTheme').colorpicker();
+
+    });
+  </script>
 </body>
 
 </html>

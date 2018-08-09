@@ -65,6 +65,7 @@
   height: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 3rem;
   -webkit-clip-path: polygon(51% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
   clip-path: polygon(51% 100%, 100% 70%, 100% 0, 0 0, 0 70%);
 }
@@ -89,7 +90,7 @@
   font-weight: bold;
   font-size: 1.5rem;
   padding-top: 1.7rem;
-  padding-bottom: 1.7rem;
+  padding-bottom: 1.3rem;
 }
 
 .aviana-package .package-action{
@@ -118,6 +119,54 @@
 
 .aviana-package.package-dark-blue .package-title, .aviana-package.package-dark-blue .package-price{
   color: #076285;
+}
+
+.aviana-package.package-secondary{
+  padding: 4rem 3rem;
+}
+
+.ribbon-popular {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon-popular span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: #79A70A;
+  background: linear-gradient(#00BAFF 0%, #076285 100%);
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; right: -21px;
+}
+.ribbon-popular span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #076285;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #076285;
+}
+.ribbon-popular span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #076285;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #076285;
 }
 
 .aviana-btn{
@@ -187,13 +236,24 @@
 
 .aviana-intro{
   background-color: #ecf0f1;
-  padding-top: 2rem;
+  margin-top: -3rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
 .aviana-features {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.aviana-features .segment-title{
+  color: #F1592B;
+  font-weight: bold;
+}
+
+.aviana-features .feature-title{
+  color: #F1592B;
+  font-weight: bold;
 }
 
 .aviana-feedback{
@@ -230,6 +290,7 @@
 }
 
 .aviana-footer-logo{
+  padding-bottom: 1rem;
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
 }
@@ -247,6 +308,7 @@
   font-size: 72px;
   background: -webkit-gradient(linear, right top, left bottom, from(#F1592B), to(#1788B4));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial; /* reset Font Awesome's display:inline-block */
 }​
