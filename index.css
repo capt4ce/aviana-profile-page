@@ -304,6 +304,20 @@ hr{
   filter: brightness(0) invert(1);
 }
 
+.aviana-admin-brand{
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+.aviana-admin-content{
+  padding-top: 3rem;
+}
+
+.aviana-admin-content .request-table{
+  padding-top: 1rem;
+  font-size: .8rem;
+}
+
 .aviana-single-feature {
   margin-top: 1rem;
 }

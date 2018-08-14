@@ -24,7 +24,7 @@
                       <div class="package-price">
                         <sup>Rp</sup>250.000/bulan</div>
                       <div class="package-action">
-                        <a href="/purchase?package=basic" class="btn btn-sm aviana-btn btn-solid-light-blue">Purchase</a>
+                        <a href="/order?package=basic" class="btn btn-sm aviana-btn btn-solid-light-blue">Order</a>
                       </div>
                     </div>
                   </div>
@@ -41,13 +41,13 @@
                       <div class="package-decription">
                           Share Server
                           <br/>Mobile App Android
-                          <br/>Max 2000 Trx PerDay
+                          <br/>Max 2000 Trx PerHari
                           <br/>2 Suplier
                       </div>
                       <div class="package-price">
                         <sup>Rp</sup>499.000/bulan</div>
                       <div class="package-action">
-                        <a href="/purchase?package=standard" class="btn btn-sm aviana-btn btn-solid-yellow">Purchase</a>
+                        <a href="/order?package=standard" class="btn btn-sm aviana-btn btn-solid-yellow">Order</a>
                       </div>
                     </div>
                   </div>
@@ -69,7 +69,7 @@
                       <div class="package-price">
                         <sup>Rp</sup>999.000/bulan</div>
                       <div class="package-action">
-                        <a href="/purchase?package=premium" class="btn btn-sm aviana-btn btn-solid-dark-blue">Purchase</a>
+                        <a href="/order?package=premium" class="btn btn-sm aviana-btn btn-solid-dark-blue">Order</a>
                       </div>
                     </div>
                   </div>

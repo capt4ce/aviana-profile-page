@@ -1,6 +1,6 @@
 <?php
   function notificationResult($errors, $successMessage){
-    if (empty($errors))
+    if (!isset($errors) || empty($errors))
       $result = "<div class=\"alert alert-success\" role=\"alert\">
                   $successMessage
                 </div>";

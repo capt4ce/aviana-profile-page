@@ -70,6 +70,10 @@
                       <option value="premium" <?php echo $_GET["package"]=="premium" || $_POST["irsPackage"]=="premium"? "selected=\"selected\"": NULL?>>IRS Premium</option>
                     </select>
                   </div>
+                  <div class="form-group">
+                    <label for="referal">Referal</label>
+                    <input type="text" class="form-control" id="referal" name="referal"  value="<?php echo $_POST["referal"]?>">
+                  </div>
                   <button type="submit" class="btn aviana-btn btn-outline-orange">Order</button>
                 </form>
               </div>

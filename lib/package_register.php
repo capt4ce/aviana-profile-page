@@ -11,8 +11,6 @@
       if (trim($_POST["businessName"])=="") $errors[]="Nama bisnis tidak boleh kosong.";
       if (trim($_POST["businessPhone"])=="") $errors[]="No. kontak bisnis tidak boleh kosong.";
 
-      echo "personName ".$_POST["personName"];
-      echo $errors;
       $personName=mysqli_real_escape_string($conn, $_POST["personName"]);
       $personAddress=mysqli_real_escape_string($conn, $_POST["personAddress"]);
       $personCity=mysqli_real_escape_string($conn, $_POST["personCity"]);
@@ -24,6 +22,7 @@
       $businessPhone=mysqli_real_escape_string($conn, $_POST["businessPhone"]);
       $appColorTheme=mysqli_real_escape_string($conn, $_POST["appColorTheme"]);
       $irsPackage=mysqli_real_escape_string($conn, $_POST["irsPackage"]);
+      $referal=mysqli_real_escape_string($conn, $_POST["referal"]);
 
       //processing upload logo
       $logo = uploadFile($uploadDir, $_FILES["appLogo"], $businessName);
@@ -43,7 +42,8 @@
           business_address,
           business_phone,
           app_logo_path,
-          app_color_theme)
+          app_color_theme,
+          referal)
           
           values('$irsPackage',
             '$personName',
@@ -56,10 +56,15 @@
             '$businessAddress',
             '$businessPhone',
             '$appLogoPath',
-            '$appColorTheme');";
+            '$appColorTheme',
+            '$referal');";
 
           mysqli_query($conn,$query) or trigger_error("Query Failed! SQL: $query - Error: ". mysqli_error($conn), E_USER_ERROR);
       }
+
+      mysqli_close($conn);
+      $resultMessage = notificationResult($errors, "Order anda telah kami terima, akan kami proses dalam beberapa waktu.");
+      if (!empty($errors)) return;
 
       $_POST["personName"] = '';
       $_POST["personAddress"] = '';
@@ -71,7 +76,6 @@
       $_POST["businessAddress"] = '';
       $_POST["businessPhone"] = '';
       $_POST["appColorTheme"] = '';
-      mysqli_close($conn);
-      $resultMessage = notificationResult($errors, "Order anda telah kami terima, akan kami proses dalam beberapa waktu.");
+      $_POST["referal"] = '';
     }
 ?>
