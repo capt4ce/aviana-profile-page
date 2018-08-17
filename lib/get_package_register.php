@@ -25,7 +25,7 @@
   status
   FROM package_registration LIMIT $start,$end;";
   
-  if (!isset($_POST["newStatus"])){
+  if (!isset($_POST["tickRecord"])){
     $result = mysqli_query($conn,$queryGet) or trigger_error("Query Failed! SQL: $query - Error: ". mysqli_error($conn), E_USER_ERROR);
     // mysqli_close($conn);
   }

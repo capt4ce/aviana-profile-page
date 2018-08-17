@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/header_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="7dp"
+        android:gravity= "center"
+        android:background="#1D89E4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="IRS Cloud"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="12sp"
+            android:text="Isi Pulsa dan Bayar Tagihan"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/saldo_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/header_section"
+        android:background="#ffffff"
+        android:padding="7dp">
+        <TextView
+            android:id="@+id/lyla_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="12sp"
+            android:text="Saldo: Rp.837.780"
+            android:textColor="#0f0f0f"/>
+        <TextView
+            android:id="@+id/isi_saldo_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="+ Isi Saldo"
+            android:textColor="#ffffff"
+            android:background="#1D89E4"
+            android:padding="4dp"
+            android:layout_alignParentRight="true"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/gojek"
+        android:layout_below="@id/saldo_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ocean" />
+
+    
+    <LinearLayout
+        android:id="@+id/tab_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#1D89E4">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="24sp"
+        android:text="Lyla"
+        android:background="#1D89E4"
+        android:gravity="center"
+        android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    
+    
+
+</LinearLayout>

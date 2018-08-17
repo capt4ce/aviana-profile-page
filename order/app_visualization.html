@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="/bootstrap-colorpicker.min.css">
+
+  <title>IRS Cloud</title>
+  <style>
+    html {
+      overflow-x: hidden;
+    }
+    div{
+      font-size: 12.8px;
+    }
+    .app-header{
+      background-color: #1D89E4;
+      color: white;
+      padding: 1.6px 0;
+      width: 100%;
+    }
+    .app-content{
+      padding: 0 3.2px;
+    }
+    .app-saldo{
+      padding: 3.2px .4rem;
+    }
+    .btn.app-btn{
+      background-color: #1D89E4;
+      padding: 1.6px 0.3rem;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+    }
+    .app-saldo .saldo-icon{
+      height: 16px;
+    }
+    .app-saldo .btn.app-btn{
+      color: white;
+      float: right;
+    }
+    .app-saldo .btn.app-btn:hover{
+      color: white;
+    }
+    .app-banner .banner-img{
+      width:100%;
+    }
+    .app-banner .banner-title{
+      color: #1D89E4;
+      font-weight: 100;
+      padding: 0 3.2px;
+    }
+    .app-banner .banner-indicator{
+      float:right;
+    }
+    .app-content .app-services{
+      padding: 3.2px;
+    }
+    .service-row{
+      width:100%;
+    }
+    .service-item{
+      border: 1px solid #1D89E4;
+      border-radius: 3px;
+      margin: 1.6px;
+      text-align: center;
+      color: white;
+    }
+    .service-item .item-img{
+      height: 40px;
+    }
+    .service-item .item-text{
+      margin: 0;
+      padding: 0 3.2px;
+      font-size: 9.6px;
+      background-color: #1D89E4;
+    }
+    .app-footer .tab-row{
+      background-color: #1D89E4;
+    }
+
+    .app-footer .android-navigation{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-header text-center">
+    <b>IRS Cloud</b>
+    <br/>Isi Pulsa dan Bayar Tagihan
+  </div>
+  <div class="app-content">
+      <div class="app-saldo">
+        <img class="saldo-icon" src="wallet.png"/>
+        Saldo: Rp.837.738
+        <a class="btn btn-sm app-btn">+ Isi Saldo</a>
+      </div>
+      <div class="app-banner">
+        <img class="banner-img" src="gojek.png"/>
+        <div class="banner-title">
+          Topup Gopay Gampang
+          <img class="banner-indicator" src="slider_indicator.png"/>
+        </div>
+      </div>
+      <div class="container app-services">
+        <div class="service-row d-flex">
+          <div class="flex-fill service-item">
+            <img class="item-img" src="pulsa_icon.png"/>
+            <p class="item-text">PULSA</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="lain2_icon.png"/>
+            <p class="item-text">Lain2</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="gojek_icon.png"/>
+            <p class="item-text">GOPAY</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="grab_icon.png"/>
+            <p class="item-text">GRAB</p>
+          </div>
+        </div>
+        <div class="service-row d-flex">
+          <div class="flex-fill service-item">
+            <img class="item-img" src="emoney_icon.png"/>
+            <p class="item-text">E-Money</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="token_icon.png"/>
+            <p class="item-text">TOKEN</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="game_icon.png"/>
+            <p class="item-text">GAME</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="telkom_icon.png"/>
+            <p class="item-text">TELKOM</p>
+          </div>
+        </div>
+        <div class="service-row d-flex">
+          <div class="flex-fill service-item">
+            <img class="item-img" src="cicilan_icon.png"/>
+            <p class="item-text">CICILAN</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="hpPasca_icon.png"/>
+            <p class="item-text">HP PASCA</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="pdam_icon.png"/>
+            <p class="item-text">PDAM</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="bpjs_icon.png"/>
+            <p class="item-text">BPJS</p>
+          </div>
+        </div>
+        <div class="service-row d-flex">
+          <div class="flex-fill service-item">
+            <img class="item-img" src="pln_icon.png"/>
+            <p class="item-text">PLN PASCA</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="tvOnline_icon.png"/>
+            <p class="item-text">TV ONLINE</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="pesawat_icon.png"/>
+            <p class="item-text">PESAWAT</p>
+          </div>
+          <div class="flex-fill service-item">
+            <img class="item-img" src="cetak_icon.png"/>
+            <p class="item-text">CETAK</p>
+          </div>
+        </div>
+      </div>
+      <div class="app-footer fixed-bottom">
+          <div class="tab-row d-flex">
+              <div class="flex-fill service-item">
+                <i class="fas fa-home tab-icon"></i>
+                <p class="item-text">Beranda</p>
+              </div>
+              <div class="flex-fill service-item">
+                <i class="fas fa-history tab-icon"></i>
+                <p class="item-text">History</p>
+              </div>
+              <div class="flex-fill service-item">
+                <i class="fas fa-user tab-icon"></i>
+                <p class="item-text">Akun</p>
+              </div>
+            </div>
+        <img class="android-navigation" src="android_navigator.png"/>
+      </div>
+  </div>
+</body>
+</html>
